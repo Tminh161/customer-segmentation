@@ -27,6 +27,7 @@ This project applies RFM (Recency, Frequency, Monetary) segmentation to 94,983 r
 5. **Dashboard** (Power BI) — 3-page interactive report with DAX measures, relationships, and slicers.
 
 Full commented SQL pipeline: [`sql/segmentation_pipeline.sql`](sql/segmentation_pipeline.sql)
+Full written summary: [`docs/Customer_Segmentation_Project_Summary.pdf`](docs/Customer_Segmentation_Project_Summary.pdf)
 
 ## Tech Stack
 
@@ -38,16 +39,16 @@ Full commented SQL pipeline: [`sql/segmentation_pipeline.sql`](sql/segmentation_
 
 ## Repository Structure
 
-```
 ├── sql/
-│   └── segmentation_pipeline.sql        # Full commented pipeline, tested end-to-end
+│   └── segmentation_pipeline.sql                    # Full commented pipeline, tested end-to-end
 ├── excel/
-│   └── cross_sell_analysis.xlsx         # Opportunity sizing, chi-square test
-├── retail-segmentation-dashboard.pbix   # Power BI report (3 pages)
+│   └── cross_sell_analysis.xlsx                     # Opportunity sizing, chi-square test
+├── docs/
+│   └── Customer_Segmentation_Project_Summary.pdf    # 1-page written project summary
+├── retail-segmentation-dashboard.pbix               # Power BI report (3 pages)
 └── README.md
-```
 
-*Note: a `docs/` folder with a 1-page written project summary (PDF) will be added shortly. Raw source CSVs are not included in this repo — see Dataset link below to download them directly.*
+*Note: raw source CSVs are not included in this repo — see Dataset link below to download them directly.*
 
 ## Dashboard Preview
 
@@ -62,5 +63,3 @@ Segment membership, recency, and monetary values are derived from real transacti
 [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce), Kaggle. Download `olist_customers_dataset.csv`, `olist_orders_dataset.csv`, and `olist_order_items_dataset.csv` to reproduce the SQL pipeline.
 
 ---
-
-*Built as a portfolio project for a Data Analyst Intern application.*
